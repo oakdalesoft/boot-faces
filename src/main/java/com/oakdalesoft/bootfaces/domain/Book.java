@@ -1,7 +1,6 @@
 package com.oakdalesoft.bootfaces.domain;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 /**
  * Created by Alex on 07/03/2015.

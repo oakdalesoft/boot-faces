@@ -20,13 +20,13 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
 
-    @RequestMapping("/books")
+    @RequestMapping("/service/books")
     public @ResponseBody
     Iterable<Book> getAllBooks() {
         return this.bookRepository.findAll();
     }
     
-    @RequestMapping(value="/book/{id}", method=RequestMethod.GET)
+    @RequestMapping(value="/service/book/{id}", method=RequestMethod.GET)
     public @ResponseBody Book getBookById(@PathVariable Long id) {
         return this.bookRepository.findOne(id);
     }
